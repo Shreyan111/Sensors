@@ -1,0 +1,341 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Sensors</title>
+	<link rel="icon" type="text/css" href="favicon.ico">
+	<style>
+
+		hr{
+			border-style: none;
+			border-top-style: dotted;
+			border-color: grey;
+			border-width: 8px;
+			width: 5%;
+			padding-bottom: 30px;
+		}
+		#container {
+			background-color: #ffffc2;
+			width: 100%;
+		}
+
+		* {box-sizing: border-box;}
+		body {font-family: Verdana, sans-serif;}
+		.mySlides {display: none;}
+		img {vertical-align: middle;}
+
+		/* Slideshow container */
+		.slideshow-container {
+  		max-width: 1000px;
+  		position: relative;
+  		margin: auto;
+		}
+
+		/* Caption text */
+		.text {
+			color: #f2f2f2;
+  			font-size: 15px;
+  			padding: 8px 12px;
+  			position: absolute;
+  			bottom: 8px;
+  			width: 100%;
+  			text-align: center;
+  		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+  			color: #f2f2f2;
+  			font-size: 12px;
+  			padding: 8px 12px;
+  			position: absolute;
+  			top: 0;
+		}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+#Contact{
+	height: 50vh;
+   	margin: 0 0 0 0;
+   	background-color: #f4fa8c;
+}
+
+
+
+	</style>
+</head>
+<body>
+	<table id="container" cellspacing="20">
+			<tr>
+				<td><p id="logo"><img width = "250" src=".\Logo.png" alt="My Logo" /></p></td>
+        		<td><a href="#Home">Home</td>
+        		<td><a href="#About Us">About Us</td>
+        		<td><a href="#Consequences of floods">Consequences of flood</td>
+        		<td><a href="#Our roles">Roles</td>
+        		<td><a href="#Our services">Services</td>
+        		<td><a href="#Water level">Water level</td>
+        		<td><a href="#Contact">Contact Us</td>
+      		</tr>
+    	</table>
+    	<hr>
+   	
+   	<div id="Home">
+   		<p style="font-size: 20px; text-align: center;">This is a website which will be providing you with various facts regarding the floods which generally occurs during rainy season and will update you about various areas which are going to be affected by the floods and will provide your with the solutions which can be taken by you in order to protect you and your family from various flood affected areas.</p>
+  	</div>
+
+
+
+  	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src=".\Images\Flood.png" style="width:75%">
+  <div class="text">Road filled with Water</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src=".\Flood2.png" style="width:60%">
+  <div class="text">House filled with Water</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src=".\Flood3.png" style="width:60%">
+  <div class="text">Affected areas</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<h4 style="text-align: center;"><a href="#Project">Navigate down to know more about our projects.</a></h4>
+
+   	<hr>
+   	<div id='About Us'>
+   		<h2 style="text-align: center;">About Us</h2>
+   		<p style="font-size: 20px; text-align: center;">This website has been created by the enthusiasts who would be giving proper information to the people in rural areas regarding floods and also will try to prevent these people and their families from getting affected by floods. This site helps you get varios updates which will help you to prevent yourself from flood related activities.</p>
+  	</div>
+  	<hr>
+
+  	<div id="Consequences of floods">
+  		<h2 style="text-align: center;">Consequences of floods</h2>
+  		<p style="font-size: 20px; text-align: center;">What are the consequences of flooding?
+  			The consequences of flooding can be devastating. Flooding immediately destroys lives and properties. Flood effect can change the feature of land areas permanently.
+  		What are the effects of flood? The most immediate floods effect would be the destruction of homes. People get displaced and may have to evacuate to higher ground where their lives are at risk as long as the waters remain on a certain level.</p>
+
+  		<p style="font-size: 20px; text-align: center;">Causes and consequences of flood affect not just people but the environment. The destruction of structures such as bridges and roads add to the human toll and prevent help from reaching devastated areas. Structures such as nuclear power plants are also put at risk. On 2011, a tsunami hit the coastline in Japan causing leakage in nuclear plants. There was high radiation recorded on the area and authorities feared the worst.
+  		Many people including animals are affected by the flood. Floods effect are expensive disasters and rebuilding an area devastated by a flood can be costly. In the United States, they cost $2.4 billion per year and can occur with weather-related disasters such as hurricanes, and typhoons. Rivers which overflow can also cause waters to rise in an area. A dam breaking, snow melting also cause floods. Earthquakes, which presage tsunamis can cause massive flooding in coastal areas.</p>
+  	</div>
+  	<hr>
+
+  	<div id="Our roles">
+  		<h2 style="text-align: center;">Our roles as a team</h2>
+  		<p style="font-size: 20px; text-align: center;">Here, our role as a team is very important to help in preventing not only the humans from loosing their lives but also prevent the animals who live in that area.</p>
+  	</div>
+
+  	<hr>
+
+  	<div id="Project">
+  		<h2 style="text-align: center;">About our project</h2>
+  		<p style="font-size: 20px; text-align: center;">In this project, we are making a sensor to check the water level of a particular area. As soon as we put water on our sensors, this water will touch the particular wire and touching that wire will tell us about the height of the water. This height of water will be sent in the frontend and in frontend, as soon as that water level comes in a particular range, we will get to know about the condition of the floods.</p>
+
+  		<p style="font-size: 20px; text-align: center;">If the water level is in a range where it is dangerous and can harm the lives of the humans, then the background color of the web page will automatically blink and there will be seen various types of colors on the screen which will be a warning signal and our rescue team can start rescue the people living in that particular area.</p>
+  	</div>
+
+  	<hr>
+  	<div id="Our services">
+  		<h2 style="text-align: center;">Our services</h2>
+  		<table cellspacing="10">
+      		<tr>
+        		<td>Accomodation provided with us</td>
+        		<td>⭐️⭐️⭐️⭐️</td>
+      		</tr>
+      		<tr>
+        		<td>Medical Facilities that will be provided</td>
+        		<td>⭐️⭐️⭐️⭐️⭐️</td>
+      		</tr>
+       		<tr>
+        		<td>Proper food and water facility</td>
+        		<td>⭐️⭐️⭐️⭐️⭐️</td>
+      		</tr>
+      		<tr>
+        		<td>Rescue team</td>
+        		<td>⭐️⭐️⭐️⭐️</td>
+      		</tr>
+    		</table>
+  		
+  	</div>
+
+  	<hr>
+
+  	<div id="Water level">
+  		<h2>Water Level Detection and Alarm</h2>
+		<p>Water Level:</p>
+		<input type="text" id="valueInput">
+
+		<button onclick="changeValue()">Submit</button>
+	</div>
+
+	<script>
+		//Tried to make a JS code for linking firebase with the frontend so that data can be retreived from backend to frontend and final result can be published. 
+		// function changeValue(){
+			// var user = document.getElementById("valueInput").value;
+
+			// firebase.database().ref('valueInput/' + user).once('value').then(function(snapshot){
+
+				// var value = snapshot.val.A;
+
+				// document.getElementById("Water level").innerHTML=A;
+
+			// })
+		// }
+	</script>
+
+	<script>
+		function changeValue(){
+    flag=-1;
+    document.getElementById("error").innerHTML="";
+    const Value=document.getElementById("valueInput").value ;
+    if (Value>8 || Value<0){
+        document.getElementById("error").innerHTML="ERROR!!";
+        flag=0;
+    } 
+
+    if (flag != 0){
+        if (Value>=7) {
+            document.getElementById("grade").innerHTML="WARNING!! Heavy Floods.";
+            	var body = document.body;
+	var button = document.querySelector('button')
+
+	function color_change () {
+		var number_one = Math.floor( Math.random() * 255);
+		var number_two = Math.floor( Math.random() * 255);
+		var number_three = Math.floor( Math.random() * 255);
+		body.style.backgroundColor =  `rgb(${number_one}, ${number_two}, ${number_three})`
+	}
+	color_change();
+	body.style.color = 'white';
+	button.addEventListener('click', color_change);
+	var auto_color = setInterval(color_change, 500);
+	setTimeout(function () {
+		clearInterval(auto_color);
+	}, 10000);
+        }
+        else if (Value>=6) {
+            document.getElementById("grade").innerHTML="Flood level high. Rescue team required.";
+        }
+        else if (Value>=5) {
+            document.getElementById("grade").innerHTML="Flood level intermediate. Standby Rescue team.";
+        }
+        else if (Value>=4) {
+            document.getElementById("grade").innerHTML="Low Flood level.";
+        }
+        else if (Value>=2.5) {
+            document.getElementById("grade").innerHTML="Heavy Rain. Predicted floods";
+        }
+        else{
+            document.getElementById("grade").innerHTML="No floods.";
+
+        }
+    }
+    else{
+       document.getElementById("grade").innerHTML=""; 
+    }
+}
+	</script>
+
+
+
+    <div>
+        <span id="error"></span><br><br>
+        <span id="grade"></span><br><br>
+    </div>
+
+
+	<hr>
+
+
+	<div id="Contact">
+        <div style="width: 50%; height: 100px; float: left;"> 
+        	<h2>Contact Us</h2>
+        	<p>Follow us on:</p>
+            <li><a href="https://www.instagram.com/shreyuu_011/">Instagram</a></li>
+            <li><a href="https://www.facebook.com/shreyan.sanyal.5/">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Linkedin</a></li>
+            <p id="copyright">&copy; Sensors</p>
+        </div>
+        <div style="margin-left: 50%; height: 100px; padding: 5px 0 0 0;"> 
+        	<h2>Website links:</h2>
+        	<p><a href="#Home">Home</p>
+        	<p><a href="#About Us">About Us</p>
+        	<p><a href="#Consequences of floods">Consequences of flood</p>
+        	<p><a href="#Our roles">Our roles</p>
+        	<p><a href="#Our services">Our services</p>
+        	<p><a href="#Water level">Water level</p>
+            
+        </div>
+    </div>
+
+   	<style>
+   		#copyright{
+   			padding: 40px 0 0 0;
+   		}
+   	</style>
+
+   	<hr>
+   	<div>  
+            <p id="Up"><a href="#container">Going up?</p>
+   	</div>
+
+</body>
+</html>
+
+
